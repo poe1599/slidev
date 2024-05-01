@@ -7,7 +7,7 @@ highlighter: shiki
 lineNumbers: true
 drawings:
   persist: false
-transition: slide-left
+transition: slide-up
 mdc: true
 ---
 
