@@ -4,6 +4,7 @@ title: 前端面試 QA
 info:
 class: text-center
 highlighter: shiki
+lineNumbers: true
 drawings:
   persist: false
 transition: slide-left
