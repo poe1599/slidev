@@ -88,7 +88,7 @@ Ans： 有了語意化標籤，搜尋引擎會更理解網頁內容，這樣搜�
 layout: center
 ---
 
-```html
+```html {3}
 <head>
   <!-- else -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
@@ -111,7 +111,7 @@ layout: two-cols
 
 ::right::
 
-<div class="grid rows-2 ml-(-40px)">
+<div class="grid rows-2 h-full ml-(-60px) p-10px b-rd-8px bg-gray-200 dark:(bg-gray-500)">
   <div>
     <p>Number: Android / iOS</p>
     <img class="w-100%" src="/assets/imgs/keyboard-number.png" />
