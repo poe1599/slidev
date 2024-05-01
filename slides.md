@@ -50,7 +50,7 @@ image: /assets/imgs/meme-drake.png
 backgroundSize: contain
 ---
 
-<br/>
+<div class="grid h-full row-2 items-center ml-(-24%)">
 
 ```html
 <div>...</div>
@@ -63,8 +63,6 @@ backgroundSize: contain
 </div>
 ```
 
-<br/><br/><br/>
-
 ```html
 <header>...</header>
 
@@ -75,6 +73,8 @@ backgroundSize: contain
   <section>...</section>
 </main>
 ```
+
+</div>
 
 <!--
 ## Q：在切版時應盡量避免只使用 \<div> 標籤，而是要善用 HTML5 所提供的各種語意化標籤，如 \<header>、\<article>、\<section> 等，其原因為何？
@@ -106,7 +106,9 @@ layout: two-cols
 ---
 
 <div class='grid h-full items-center text-center'>
-  <h1>&lt;input&gt;</h1>
+
+# \<input>
+
 </div>
 
 ::right::
