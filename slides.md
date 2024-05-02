@@ -157,6 +157,112 @@ layout: section
 # CSS
 
 ---
+layout: center
+---
+
+* !important
+* \*
+* ID
+* inline style
+* Element
+* Class
+
+<!-- 
+## Q：請依照 CSS 權重(由高到低)對上述內容依序進行排列。
+Ans：!important > inline style 內聯樣式 > ID ID選擇器 > Class 類別選擇器 > Element 元素選擇器 > * 通用選擇器
+ -->
+
+---
+layout: two-cols
+---
+
+<div class="box">
+  <div>1</div>
+  <span>2</span>
+  <div>3</div>
+  <span>4</span>
+  <div>5</div>
+</div>
+
+<style>
+  .box {
+    display: flex;
+    gap: 16px;
+    border: 1px solid #f00;
+    padding: 16px;
+    max-width: 300px;
+
+    span, div {
+      width: 20px;
+      height: 20px;
+      display: inline-block;
+      background-color: #ccc;
+    }
+  }
+</style>
+
+::right::
+
+```html
+<div class="box">
+  <div>1</div>
+  <span>2</span>
+  <div>3</div>
+  <span>4</span>
+  <div>5</div>
+</div>
+```
+
+````md magic-move
+```html
+<style>
+  .box {
+    display: flex;
+    gap: 16px;
+    border: 1px solid red;
+    padding: 16px;
+    max-width: 300px;
+
+    span, div {
+      width: 20px;
+      height: 20px;
+      display: inline-block;
+      background-color: gray;
+    }
+  }
+</style>
+```
+
+```html{*|16-18}
+<style>
+  .box {
+    display: flex;
+    gap: 16px;
+    border: 1px solid red;
+    padding: 16px;
+    max-width: 300px;  
+
+    span, div {
+      width: 20px;
+      height: 20px;
+      display: inline-block;
+      background-color: gray;
+    }
+
+    span:first-child {
+      background-color: red;
+    }
+  }
+</style>
+```
+````
+
+<!-- 
+## Q：該 HTML 結構與 SCSS 1 搭配後將產生如上圖的五個灰色小方塊。請問如果將 SCSS 1 的部分改寫為 SCSS 2 後將會得到什麼效果？
+Ans：不會變色。
+ -->
+
+---
 layout: section
 ---
 
