@@ -173,36 +173,17 @@ Ans：!important > inline style 內聯樣式 > ID ID選擇器 > Class 類別選�
  -->
 
 ---
-layout: two-cols
----
 
-<div class="box">
-  <div>1</div>
-  <span>2</span>
-  <div>3</div>
-  <span>4</span>
-  <div>5</div>
-</div>
-
-<style>
-  .box {
-    display: flex;
-    gap: 16px;
-    border: 1px solid #f00;
-    padding: 16px;
-    max-width: 300px;
-
-    span, div {
-      width: 20px;
-      height: 20px;
-      display: inline-block;
-      background-color: #ccc;
-    }
-  }
-</style>
-
-::right::
-
+<div class="grid cols-2 gap-16px">
+  <div class="flex flex-col gap-32px">
+    <div class="box">
+      <div>1</div>
+      <span>2</span>
+      <div>3</div>
+      <span>4</span>
+      <div>5</div>
+    </div>
+    <div>
 ```html
 <div class="box">
   <div>1</div>
@@ -212,7 +193,9 @@ layout: two-cols
   <div>5</div>
 </div>
 ```
-
+    </div>
+  </div>
+  <div>
 ````md magic-move
 ```html
 <style>
@@ -223,7 +206,8 @@ layout: two-cols
     padding: 16px;
     max-width: 300px;
 
-    span, div {
+    span, 
+    div {
       width: 20px;
       height: 20px;
       display: inline-block;
@@ -233,7 +217,7 @@ layout: two-cols
 </style>
 ```
 
-```html{*|16-18}
+```html{*|17-19}
 <style>
   .box {
     display: flex;
@@ -242,7 +226,8 @@ layout: two-cols
     padding: 16px;
     max-width: 300px;  
 
-    span, div {
+    span, 
+    div {
       width: 20px;
       height: 20px;
       display: inline-block;
@@ -256,6 +241,28 @@ layout: two-cols
 </style>
 ```
 ````
+  </div>
+</div>
+
+
+
+<style>
+  .box {
+    display: flex;
+    gap: 16px;
+    border: 1px solid #f00;
+    padding: 16px;
+    max-width: 300px;
+
+    span, 
+    div {
+      width: 20px;
+      height: 20px;
+      display: inline-block;
+      background-color: #ccc;
+    }
+  }
+</style>
 
 <!-- 
 ## Q：該 HTML 結構與 SCSS 1 搭配後將產生如上圖的五個灰色小方塊。請問如果將 SCSS 1 的部分改寫為 SCSS 2 後將會得到什麼效果？
