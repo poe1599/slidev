@@ -378,3 +378,46 @@ Ans：top 與 left 以父層為 100% 做為參考，transform: translate 則以�
 -->
 
 ---
+layout: two-cols
+---
+<div class="h-full">
+  <div class="flex items-center justify-center h-full">
+    <div class="w-50% h-full">
+      <img class="w-full h-full object-contain" src="/assets/imgs/css-margin.jpg">
+    </div>
+    <div class="grid rows-2 font-size-3rem gap-13rem pl-32px">
+      <div>A</div>
+      <div>B</div>
+    </div>
+  </div>
+</div>
+
+::right::
+
+<div class="grid items-center h-full">
+
+```scss
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: cornflowerblue;
+  margin-left: 100px;
+  margin-top: 100px;
+
+  &__item {
+    width: 100px;
+    height: 100px;
+    background-color: lightgreen;
+    margin-left: 50px;
+    margin-top: 25px;
+  }
+}
+```
+
+</div>
+
+<!-- 
+## Q：該 HTML 結構與 SCSS 搭配 後呈現的效果為和？
+Ans：B。
+-->
+
