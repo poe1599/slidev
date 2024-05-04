@@ -466,3 +466,19 @@ foo()
 ## Q：請說明該程式的console執行結果為何？
 Ans：undefined。
 -->
+
+---
+layout: center
+---
+
+```js
+const num1 = 0.1
+const num2 = 0.2
+
+console.log(num1 + num2 === 0.3)
+```
+
+<!-- 
+## Q：請說明該程式的console執行結果為何？
+Ans：false。
+-->
