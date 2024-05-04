@@ -526,3 +526,21 @@ layout: center
 ## Q：請說明在 JS 中 == 和 === 有何差異？
 Ans：兩個等於（==）會對被判別的變數做轉換型別的動作（coercion又稱為implicit type conversion）。 對於 string、number 等基礎型別而言，不同型別間比較，== 會轉化成同一型別後的 "值" 是否相等。=== 時如果型別不同，其結果就是不相等。同型別比較，直接進行 "值" 比較。
 -->
+
+---
+layout: center
+---
+
+```js {*|1-3|5-6|*}
+const a = [1, 2, 3]           
+const b = [1, 2, 3]
+const c = a
+
+console.log(a === b)
+console.log(a === c)
+```
+
+<!-- 
+## Q：請說明該程式的console執行結果為何？
+Ans：console.log(a === b) 結果 flase，console.log(a === c)結果為 true。
+-->
