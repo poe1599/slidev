@@ -580,3 +580,30 @@ layout: section
 
 # Modern Web
 
+---
+layout: center
+---
+
+<ul class="flex flex-col gap-12px font-size-32px">
+  <li>Cookie</li>
+  <li>SessionStorage</li>
+  <li>LocalStorage</li>
+</ul>
+
+<!-- 
+## Q：請說明Cookie，sessionStorage 和 localStorage 的區別是什麼？
+Ans：
+* Cookie: 
+  存儲期限： 可以設置過期時間，並且除非手動刪除或到期，否則在每次請求中都會被發送。
+  大小限制： 通常每個Cookie的大小限制為4 KB。
+  用途： 主要用於客戶端和服務器之間的通信，存儲會話信息、用戶首選項等。
+* SessionStorage: 
+  存儲期限： 數據僅在當前會話（窗口或選項卡）有效，當瀏覽器被關閉時清除。
+  大小限制： 通常每個瀏覽器的SessionStorage大小限制為5 MB左右。
+  用途： 適合臨時數據存儲，當用戶在同一個瀏覽器窗口或選項卡中進行導航時使用。
+* LocalStorage: 
+  存儲期限： 數據在瀏覽器關閉後仍然保留，直到被明確刪除。
+  大小限制： 通常每個瀏覽器的LocalStorage大小限制為5 MB左右。
+  用途： 適合長期存儲，常用於本地數據緩存，例如應用程序配置信息、用戶首選項等。
+-->
+
