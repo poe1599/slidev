@@ -426,3 +426,25 @@ layout: section
 ---
 
 # Javascript
+
+---
+layout: center
+---
+
+```js{*|2|3-7|5,10|*}
+const obj = {
+  color: 'red',
+  fn() {
+    setTimeout(function() {
+      console.log(this.color)
+    })
+  }
+}
+
+obj.fn()
+```
+
+<!-- 
+## Q：請說明該程式的console執行結果為何？
+Ans：undefined。
+-->
