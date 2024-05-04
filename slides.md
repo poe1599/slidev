@@ -448,3 +448,21 @@ obj.fn()
 ## Q：請說明該程式的console執行結果為何？
 Ans：undefined。
 -->
+
+---
+layout: center
+---
+
+```js{*|2,6|*}
+function foo() {
+  console.log(browser)
+  var browser = 'Chrome'
+}
+
+foo()
+```
+
+<!-- 
+## Q：請說明該程式的console執行結果為何？
+Ans：undefined。
+-->
