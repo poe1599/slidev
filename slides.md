@@ -157,3 +157,19 @@ layout: section
 # CSS
 
 ---
+layout: center
+---
+
+* !important
+* \*
+* ID
+* inline style
+* Element
+* Class
+
+<!-- 
+## Q：請依照 CSS 權重(由高到低)對上述內容依序進行排列。
+Ans：!important > inline style 內聯樣式 > ID ID選擇器 > Class 類別選擇器 > Element 元素選擇器 > * 通用選擇器
+ -->
+
+---
