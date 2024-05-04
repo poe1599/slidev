@@ -102,3 +102,31 @@ Ans：在 \<meta> 標籤中設定 viewport 主要用於控制網頁在移動設�
  -->
 
 ---
+layout: two-cols
+---
+
+<div class='grid h-full items-center text-center'>
+
+# \<input>
+
+</div>
+
+::right::
+
+<div class="grid rows-2 h-full ml-(-60px) p-10px b-rd-8px bg-gray-200 dark:(bg-gray-500)">
+  <div>
+    <p>Number: Android / iOS</p>
+    <img class="w-100%" src="/assets/imgs/keyboard-number.png" />
+  </div>
+  <div>
+    <p>Phone: Android / iOS</p>
+    <img class="w-100%" src="/assets/imgs/keyboard-phone.png" />
+  </div>
+</div>
+
+<!-- 
+## Q：在移動裝置中點擊文字輸入框後，如何讓瀏覽器顯示不同類型的原生虛擬鍵盤？
+Ans：使用 inputmode 屬性。
+ -->
+
+---
