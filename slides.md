@@ -45,3 +45,43 @@ Ans： 兩者都能呈現粗體文字，\<b> 標籤是一個物理標記，它�
 -->
 
 ---
+layout: image-left
+image: /assets/imgs/meme-drake.png
+backgroundSize: contain
+---
+
+<div class="grid h-full row-2 items-center ml-(-24%)">
+
+```html
+<div>...</div>
+
+<div>...</div>
+
+<div>
+  <div>...</div>
+  <div>...</div>
+</div>
+```
+
+```html
+<header>...</header>
+
+<nav>...</nav>
+
+<main>
+  <article>...</article>
+  <section>...</section>
+</main>
+```
+
+</div>
+
+<!--
+## Q：在切版時應盡量避免只使用 \<div> 標籤，而是要善用 HTML5 所提供的各種語意化標籤，如 \<header>、\<article>、\<section> 等，其原因為何？
+Ans： 有了語意化標籤，搜尋引擎會更理解網頁內容，這樣搜尋結果也會更正確。更直接的說，使用正確的語意標籤，直接影響的就是搜尋結果的最佳化。
+1. 可以快速抓到網頁架構和每個區塊的位置
+2. 對於SEO優化有幫助
+語意化標籤的另一個好處是無障礙友善，如 \<strong> 標籤，當視障者在使用螢幕閱讀器時，能夠明顯感受到 \<b> 與 \<strong> 的不同，遇到 \<b> 時與處理一般詞語一樣進行閱讀，但遇到 \<strong> 時會加重與停頓。
+-->
+
+---
