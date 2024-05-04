@@ -573,3 +573,10 @@ function foo(fruit, quantity) {
 ## Q：針對 coding style 如何改善巢狀條件語句與多重條件？
 Ans：使用 return 盡早回傳，使用 includes 處理多重條件。
 -->
+
+---
+layout: section
+---
+
+# Modern Web
+
