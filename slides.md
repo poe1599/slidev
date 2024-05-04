@@ -544,3 +544,32 @@ console.log(a === c)
 ## Q：請說明該程式的console執行結果為何？
 Ans：console.log(a === b) 結果 flase，console.log(a === c)結果為 true。
 -->
+
+---
+layout: center
+---
+
+```js
+function foo(fruit, quantity) {
+  // 判定一：fruit 必須有值
+  if (fruit) {
+    
+    // 判定二：fruit 必須是紅色的
+    if (fruit === 'apple' || fruit === 'strawberry' || fruit === 'cherry' || fruit === 'cranberries') {
+      console.log('red fruit')
+
+      // 判定三：quantity 數量必須大於 10
+      if (quantity > 10) {
+        console.log('big quantity')
+      }
+    }
+  } else {
+    throw new Error('No fruit!')
+  }
+}
+```
+
+<!-- 
+## Q：針對 coding style 如何改善巢狀條件語句與多重條件？
+Ans：使用 return 盡早回傳，使用 includes 處理多重條件。
+-->
