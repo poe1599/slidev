@@ -216,6 +216,7 @@ layout: two-cols
 ::right::
 
 <div class="mt-64px"></div>
+
 ````md magic-move
 ```html
 <style>
@@ -265,26 +266,54 @@ layout: two-cols
 Ans：不會變色。
  -->
  
- ---
+---
+ layout: center
+---
+
+<div class="Box">
+  <span class="text">Box</span>
+  <div class="Item">
+    <span class="text">Item</span>
+  </div>
+</div>
+
+<style>
+  .Box {
+    @apply w-50vh h-50vh bg-gray-300;
+    @apply b-4px b-solid b-gray-400;
+    @apply relative;
+  }
+
+  .Item {
+    @apply w-10vh h-10vh bg-orange-500 ;
+    @apply b-4px b-solid b-orange-800;
+    @apply absolute top-50% left-50%;
+    transform: translate(-50%,-50%);
+  }
+
+  .text {
+    @apply absolute top-0 left-0;
+    @apply inline-block p-12px text-black;
+  }
+</style>
  
- <!-- 
- ## Q：請舉出至少二種 CSS 實現垂直水平置中的方法。
- Ans：1. 使用Flexbox。 2. 使用絕對定位和transform。
- -->
+<!-- 
+## Q：請舉出至少二種 CSS 實現垂直水平置中的方法。
+Ans：1. 使用Flexbox。 2. 使用絕對定位和transform。
+-->
 
- ---
-
+---
 <!-- 
 ## Q：該 HTML 結構與 SCSS 搭配後即可達到將 .box__item 垂直水平置中於 .box 的效果。請問出現在該樣式中的 4 個百分比分別是相對於誰？(題意舉例：top 50% 所表示的百分之 50 是以誰作為 100% 當作參考)
 Ans：top 與 left 以父層為 100% 做為參考，transform: translate 則以自身 dom 元素作為參考。
- -->
+-->
 
- ---
+---
  
- <!-- 
- ## Q：該 HTML 結構與 SCSS 搭配 後呈現的效果為和？
- Ans：B。
- -->
+<!-- 
+## Q：該 HTML 結構與 SCSS 搭配 後呈現的效果為和？
+Ans：B。
+-->
 
 ---
 layout: section
