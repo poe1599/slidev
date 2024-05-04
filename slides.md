@@ -267,3 +267,39 @@ Ans：不會變色。
  -->
  
 ---
+ layout: center
+---
+
+<div class="Box">
+  <span class="text">Box</span>
+  <div class="Item">
+    <span class="text">Item</span>
+  </div>
+</div>
+
+<style>
+  .Box {
+    @apply w-30vh h-30vh bg-gray-300;
+    @apply b-4px b-solid b-gray-400;
+    @apply relative;
+  }
+
+  .Item {
+    @apply w-8vh h-8vh bg-orange-500 ;
+    @apply b-4px b-solid b-orange-800;
+    @apply absolute top-50% left-50%;
+    transform: translate(-50%,-50%);
+  }
+
+  .text {
+    @apply absolute top-0 left-0;
+    @apply inline-block p-12px text-black;
+  }
+</style>
+ 
+<!-- 
+## Q：請舉出至少二種 CSS 實現垂直水平置中的方法。
+Ans：1. 使用Flexbox。 2. 使用絕對定位和transform。
+-->
+
+---
