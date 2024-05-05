@@ -635,3 +635,14 @@ Ans：
 2. 設置請求標頭：Cache-Control: no-cache, no-store, must-revalidate。
 3. 頁面的 HEAD 中加入 meta 標籤 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>。
 -->
+
+---
+layout: center
+---
+
+## Clickjacking
+
+<!-- 
+## Q：請舉出至少一種防止 Clickjacking 的方法。
+Ans：X-Frame-Options 或 Content-Security-Polic 的 frame-ancestors 
+-->
