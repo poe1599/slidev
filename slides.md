@@ -620,4 +620,18 @@ layout: center
 Ans：CORS，Access-Control-Allow-Origin white list。
 -->
 
+---
+layout: center
+---
 
+<div class="w-80% m-auto">
+  <img class="object-contain" src="/assets/imgs/cache.png" />
+</div>
+
+<!-- 
+## Q：請舉出至少一種方法防止瀏覽器對靜態資源進行快取的預設行為。
+Ans：
+1. 副檔名後方加上參數。
+2. 設置請求標頭：Cache-Control: no-cache, no-store, must-revalidate。
+3. 頁面的 HEAD 中加入 meta 標籤 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>。
+-->
