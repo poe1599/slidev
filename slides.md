@@ -611,6 +611,44 @@ Ans：使用 return 盡早回傳，使用 includes 處理多重條件。
 -->
 
 ---
+title: Asynchronous Character Printing
+level: 2
+layout: center
+---
+
+```js
+let t = ''
+const text = 'cool!'
+
+const waitPrint = () => {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      console.log(t)
+      resolve(t)
+    }, 0)
+  })
+}
+
+text.split('').forEach(async (n) => {
+  t = n
+  await waitPrint()
+})
+```
+
+<!-- 
+## Q：請問以上這段程式碼最後的執行結果為何？
+Ans：打印出5個"!"
+
+這個題目涉及了幾個重要的概念：
+
+* 非同步處理（Asynchronous Processing）：JavaScript 是一種單線程的語言，當執行一段程式碼時，會逐行執行。但是，當需要處理一些需要時間的操作（例如網路請求、檔案讀取等），單純的同步處理方式會造成程式阻塞，因此使用非同步處理可以讓程式在等待時間內執行其他任務，待操作完成後再回來處理結果。
+* Promise：Promise 是一個表示非同步操作完成或失敗的物件。它代表了一個值（通常是未來會發生的事件），讓我們可以將程式的行為包裝成一個 Promise 物件，並且可以透過 .then() 和 .catch() 方法來處理操作完成或失敗後的結果。
+* async/await：async 函式是用來定義一個返回 Promise 物件的函式，而 await 運算子用來等待一個 Promise 物件解析，並返回解析後的值。async/await 讓非同步程式碼看起來更像同步程式碼，讓開發者更容易理解和編寫。
+
+這個題目中，通過使用 setTimeout 模擬一個非同步操作，在每次迴圈中，將字串 text 分割為單個字元後，使用 async/await 來等待 waitPrint 函式的執行結果。然而，由於 forEach 方法不會等待 await 的 Promise 解析，導致 waitPrint 函式會在所有迴圈完成後才執行，因此只會印出最後一個字元。這強調了在處理非同步操作時，對於事件順序的理解和處理的重要性。
+-->
+
+---
 layout: section
 ---
 
