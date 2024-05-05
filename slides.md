@@ -607,3 +607,17 @@ Ans：
   用途： 適合長期存儲，常用於本地數據緩存，例如應用程序配置信息、用戶首選項等。
 -->
 
+---
+layout: center
+---
+
+<div class="w-80% m-auto">
+  <img class="object-contain" src="/assets/imgs/cors.png" />
+</div>
+
+<!-- 
+## Q：前端網頁在瀏覽器中呼叫第三方 API 時如果出現下列錯誤，請問是什麼原因造成？以及如何解決？
+Ans：CORS，Access-Control-Allow-Origin white list。
+-->
+
+
