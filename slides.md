@@ -646,3 +646,21 @@ layout: center
 ## Q：請舉出至少一種防止 Clickjacking 的方法。
 Ans：X-Frame-Options 或 Content-Security-Polic 的 frame-ancestors 
 -->
+
+---
+layout: center
+---
+
+<ul class="flex flex-col gap-12px font-size-32px">
+  <li>Client Side Rendering (CSR)</li>
+  <li>Server Side Rendering (SSR)</li>
+  <li>Static Side Generation (SSG)</li>
+</ul>
+
+<!-- 
+## Q：請說明何謂 Client Side Rendering (CSR)，Server Side Rendering (SSR) 和 Static Side Generation (SSG) ?
+Ans：
+* SSG 或是靜態生成就是 build 整個專案的時候產生 HTML 檔案，這些 HTML 檔案已經包含所需要顯示的資料。這渲染模式是預渲染 (pre-rendering) 的一種。
+* SSG 很適合做內容不會有變化的靜態網站，因為所有資料是 build 時得到的。這些 HTML 檔案可以放在 CDN 上然後被 cache 而提升網站效能，除了這點之外，採用 SSG 渲染模式也利於 SEO。
+
+-->
