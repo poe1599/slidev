@@ -251,7 +251,7 @@ layout: two-cols
 </style>
 ```
 
-```html{*|16-18}
+```html {*|16-18}
 <style>
   .box {
     display: flex;
@@ -371,7 +371,7 @@ layout: two-cols
 
 <div class="mb-32px"></div>
 
-```scss{*|11-13}
+```scss {*|11-13}
 .box {
   width: 400px;
   height: 400px;
@@ -453,7 +453,7 @@ level: 2
 layout: center
 ---
 
-```js{*|2|3-7|5,10|*}
+```js {*|2|3-7|5,10|*}
 const obj = {
   color: 'red',
   fn() {
@@ -477,7 +477,7 @@ level: 2
 layout: center
 ---
 
-```js{*|2,6|*}
+```js {*|2,6|*}
 function foo() {
   console.log(browser)
   var browser = 'Chrome'
