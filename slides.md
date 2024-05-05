@@ -664,3 +664,9 @@ Ans：
 * SSG 很適合做內容不會有變化的靜態網站，因為所有資料是 build 時得到的。這些 HTML 檔案可以放在 CDN 上然後被 cache 而提升網站效能，除了這點之外，採用 SSG 渲染模式也利於 SEO。
 
 -->
+
+---
+layout: section
+---
+
+# The End
