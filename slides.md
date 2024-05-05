@@ -26,6 +26,8 @@ layout: section
 # HTML
 
 ---
+title: strong 與 b 的差異
+level: 2
 layout: quote
 ---
 
@@ -45,6 +47,8 @@ Ans： 兩者都能呈現粗體文字，\<b> 標籤是一個物理標記，它�
 -->
 
 ---
+title: 語意化標籤
+level: 2
 layout: image-left
 image: /assets/imgs/meme-drake.png
 backgroundSize: contain
@@ -85,6 +89,8 @@ Ans： 有了語意化標籤，搜尋引擎會更理解網頁內容，這樣搜�
 -->
 
 ---
+title: meta viewport
+level: 2
 layout: center
 ---
 
@@ -102,6 +108,8 @@ Ans：在 \<meta> 標籤中設定 viewport 主要用於控制網頁在移動設�
  -->
 
 ---
+title: input inputmode
+level: 2
 layout: two-cols
 ---
 
@@ -130,6 +138,8 @@ Ans：使用 inputmode 屬性。
  -->
 
 ---
+title: 行內元素及區塊元素的差異
+level: 2
 layout: center
 ---
 
@@ -157,6 +167,8 @@ layout: section
 # CSS
 
 ---
+title: CSS 權重排列
+level: 2
 layout: center
 ---
 
@@ -173,6 +185,8 @@ Ans：!important > inline style 內聯樣式 > ID ID選擇器 > Class 類別選�
  -->
 
 ---
+title: \:first-child 選擇器
+level: 2
 layout: two-cols
 ---
 
@@ -267,7 +281,9 @@ Ans：不會變色。
  -->
  
 ---
- layout: center
+title: 垂直水平置中
+level: 2
+layout: center
 ---
 
 <div class="Box">
@@ -303,6 +319,8 @@ Ans：1. 使用Flexbox。 2. 使用絕對定位和transform。
 -->
 
 ---
+title: 百分比參考對象
+level: 2
 layout: two-cols
 ---
 
@@ -378,6 +396,8 @@ Ans：top 與 left 以父層為 100% 做為參考，transform: translate 則以�
 -->
 
 ---
+title: CSS margin collapsing
+level: 2
 layout: two-cols
 ---
 <div class="h-full">
@@ -417,7 +437,7 @@ layout: two-cols
 </div>
 
 <!-- 
-## Q：該 HTML 結構與 SCSS 搭配 後呈現的效果為和？
+## Q：該 HTML 結構與 SCSS 搭配 後呈現的效果為何？
 Ans：B。
 -->
 
@@ -428,6 +448,8 @@ layout: section
 # Javascript
 
 ---
+title: this
+level: 2
 layout: center
 ---
 
@@ -450,6 +472,8 @@ Ans：undefined。
 -->
 
 ---
+title: var Hoisting
+level: 2
 layout: center
 ---
 
@@ -468,6 +492,8 @@ Ans：undefined。
 -->
 
 ---
+title: 浮點數精度
+level: 2
 layout: center
 ---
 
@@ -484,6 +510,8 @@ Ans：false。
 -->
 
 ---
+title: Throttle vs Debounce
+level: 2
 layout: center
 ---
 
@@ -497,6 +525,8 @@ Ans：
 -->
 
 ---
+title: By Reference
+level: 2
 layout: center
 ---
 
@@ -517,6 +547,8 @@ Ans：fn(foo) 結果 2，console.log(foo) 結果為 {bar: 2}。
 -->
 
 ---
+title: 相等比較
+level: 2
 layout: center
 ---
 
@@ -528,6 +560,8 @@ Ans：兩個等於（==）會對被判別的變數做轉換型別的動作（coe
 -->
 
 ---
+title: By Reference & Equality Comparisons
+level: 2
 layout: center
 ---
 
@@ -546,6 +580,8 @@ Ans：console.log(a === b) 結果 flase，console.log(a === c)結果為 true。
 -->
 
 ---
+title: refactor
+level: 2
 layout: center
 ---
 
@@ -581,6 +617,8 @@ layout: section
 # Modern Web
 
 ---
+title: cookie & web storage API
+level: 2
 layout: center
 ---
 
@@ -608,6 +646,8 @@ Ans：
 -->
 
 ---
+title: CORS
+level: 2
 layout: center
 ---
 
@@ -621,6 +661,8 @@ Ans：CORS，Access-Control-Allow-Origin white list。
 -->
 
 ---
+title: Cache
+level: 2
 layout: center
 ---
 
@@ -637,6 +679,8 @@ Ans：
 -->
 
 ---
+title: Clickjacking
+level: 2
 layout: center
 ---
 
@@ -648,6 +692,8 @@ Ans：X-Frame-Options 或 Content-Security-Polic 的 frame-ancestors
 -->
 
 ---
+title: CSR、SSR、SSG
+level: 2
 layout: center
 ---
 
