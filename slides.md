@@ -437,8 +437,117 @@ layout: two-cols
 </div>
 
 <!-- 
-## Q：該 HTML 結構與 SCSS 搭配 後呈現的效果為何？
+## Q：該 HTML 結構與 SCSS 搭配後呈現的效果為何？
 Ans：B。
+-->
+
+---
+title: button display & pseudo-element
+level: 2
+layout: two-cols
+---
+
+```html
+<div>
+  <button class="Q-button">Q-button</button>
+</div>
+```
+
+<div class="mb-32px"></div>
+
+```css
+.Q-button {
+  position: relative;
+  display: inline;
+  width: 100px;
+  height: 50px;
+  background: lightblue;
+  border: none;
+}
+
+.Q-button::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-style: solid;
+  border-width: 25px 25px 0 0;
+  border-color: tomato transparent transparent transparent;   
+}
+```
+
+::right::
+
+<div class="h-full ml-32px grid cols-2 gap-16px">
+  <div class="option">
+    <b>A</b>
+    <div class="A-option">
+      <button class="Q-button">Q-button</button>
+    </div>
+  </div>
+  <div class="option">
+    <b>B</b>
+    <div class="B-option">
+      <span class="Q-button">Q-button</span>
+    </div>
+  </div>
+  <div class="option">
+    <b>C</b>
+    <div class="C-option">
+      <button class="Q-button">Q-button</button>
+    </div>
+  </div>
+  <div class="option">
+    <b>D</b>
+    <div class="D-option">
+      <span class="Q-button">Q-button</span>
+    </div>
+  </div>
+</div>
+
+<style>
+  .option {
+    @apply w-full;
+    @apply flex items-center;
+    @apply bg-gray;
+  }
+
+  b {
+    padding: 16px;
+    font-size: 32px;
+  }
+
+  .Q-button {
+    position: relative;
+    display: inline;
+    width: 100px;
+    height: 50px;
+    background: lightblue;
+    border: none;
+  }
+
+  .Q-button::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-style: solid;
+    border-width: 25px 25px 0 0;
+    border-color: tomato transparent transparent transparent; 
+  }
+  
+  .A-option,
+  .B-option {
+    .Q-button::before {
+      content: '';
+    }
+  }
+</style>
+
+<!-- 
+## Q：該 HTML 結構與 CSS 搭配後呈現的效果為何？
+Ans：C。
+
+* inline 元素設置寬高是無效的，但 button 元素即便設置為 display: inline ，還是會被瀏覽器視為 inline-block，故設置寬高為有效。
+* 偽元素必須設置 content 才能顯示。
 -->
 
 ---
