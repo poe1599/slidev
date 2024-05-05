@@ -560,23 +560,30 @@ Ans：兩個等於（==）會對被判別的變數做轉換型別的動作（coe
 -->
 
 ---
-title: By Reference & Equality Comparisons
+title: By Reference & Equality Comparisons & shadow copy
 level: 2
 layout: center
 ---
 
-```js {*|1-3|5-6|*}
-const a = [1, 2, 3]           
-const b = [1, 2, 3]
+```js {*|1-4|6-9|*}
+const a = [[1], [2], [3]]
+const b = [[1], [2], [3]]
 const c = a
+const d = [...c]
 
 console.log(a === b)
 console.log(a === c)
+console.log(a === d)
+console.log(a[0] === d[0])
 ```
 
 <!-- 
 ## Q：請說明該程式的console執行結果為何？
-Ans：console.log(a === b) 結果 flase，console.log(a === c)結果為 true。
+Ans：
+- console.log(a === b) // false
+- console.log(a === c) // true
+- console.log(a === d) // false
+- console.log(a[0] === d[0]) // true
 -->
 
 ---
