@@ -21,6 +21,7 @@ mdc: true
 
 ---
 layout: section
+class: 'bg-yellow-100'
 ---
 
 # HTML
@@ -162,6 +163,7 @@ Ans：
 
 ---
 layout: section
+class: 'bg-yellow-100'
 ---
 
 # CSS
@@ -552,6 +554,7 @@ Ans：C。
 
 ---
 layout: section
+class: 'bg-yellow-100'
 ---
 
 # Javascript
@@ -766,6 +769,7 @@ Ans：打印出5個"!"
 
 ---
 layout: section
+class: 'bg-yellow-100'
 ---
 
 # Modern Web
@@ -867,6 +871,7 @@ Ans：
 
 ---
 layout: section
+class: 'bg-yellow-100'
 ---
 
 # The End
