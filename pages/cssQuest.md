@@ -20,8 +20,10 @@ layout: center
 
 <!-- 
 ## Q：請依照 CSS 權重(由高到低)對上述內容依序進行排列。
+⭐
+
 Ans：!important > inline style 內聯樣式 > ID ID選擇器 > Class 類別選擇器 > Element 元素選擇器 > * 通用選擇器
- -->
+-->
 
 ---
 title: \:first-child 選擇器
@@ -116,8 +118,10 @@ layout: two-cols
 
 <!-- 
 ## Q：該 HTML 結構與 SCSS 1 搭配後將產生如上圖的五個灰色小方塊。請問如果將 SCSS 1 的部分改寫為 SCSS 2 後將會得到什麼效果？
+⭐⭐
+
 Ans：不會變色。
- -->
+-->
  
 ---
 title: 垂直水平置中
@@ -154,6 +158,8 @@ layout: center
  
 <!-- 
 ## Q：請舉出至少二種 CSS 實現垂直水平置中的方法。
+⭐
+
 Ans：1. 使用Flexbox。 2. 使用絕對定位和transform。
 -->
 
@@ -231,6 +237,8 @@ layout: two-cols
 
 <!-- 
 ## Q：該 HTML 結構與 SCSS 搭配後即可達到將 .box__item 垂直水平置中於 .box 的效果。請問出現在該樣式中的 4 個百分比分別是相對於誰？(題意舉例：top 50% 所表示的百分之 50 是以誰作為 100% 當作參考)
+⭐⭐
+
 Ans：top 與 left 以父層為 100% 做為參考，transform: translate 則以自身 dom 元素作為參考。
 -->
 
@@ -277,6 +285,8 @@ layout: two-cols
 
 <!-- 
 ## Q：該 HTML 結構與 SCSS 搭配後呈現的效果為何？
+⭐⭐
+
 Ans：B。
 -->
 
@@ -383,6 +393,8 @@ layout: two-cols
 
 <!-- 
 ## Q：該 HTML 結構與 CSS 搭配後呈現的效果為何？
+⭐⭐⭐
+
 Ans：C。
 
 * inline 元素設置寬高是無效的，但 button 元素即便設置為 display: inline ，還是會被瀏覽器視為 inline-block，故設置寬高為有效。
