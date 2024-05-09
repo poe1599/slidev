@@ -18,6 +18,12 @@ layout: center
 * Element
 * Class
 
+<style>
+  ul {
+    font-size: 32px;
+  }
+</style>
+
 <!-- 
 ## Q：請依照 CSS 權重(由高到低)對上述內容依序進行排列。
 ⭐
@@ -169,7 +175,7 @@ level: 2
 layout: two-cols
 ---
 
-<div class="mr-32px">
+<div class="mr-32px h-full flex items-center">
   <div class="wrap">
     <div class="box">
       <span class="text">Box</span>
@@ -183,8 +189,8 @@ layout: two-cols
 <style>
   .wrap {
     @apply w-40vh h-40vh flex justify-center items-center bg-gray-200;
-    @apply mb-32px;
   }
+
   .box {
     @apply w-80% h-80% bg-gray-300;
     @apply b-4px b-solid b-gray-400;
@@ -214,7 +220,7 @@ layout: two-cols
 </body>
 ```
 
-<div class="mb-32px"></div>
+<div class="mb-16px"></div>
 
 ```scss {*|11-13}
 .box {
@@ -302,7 +308,7 @@ layout: two-cols
 </div>
 ```
 
-<div class="mb-32px"></div>
+<div class="mb-16px"></div>
 
 ```css
 .Q-button {
@@ -357,7 +363,7 @@ layout: two-cols
   .option {
     @apply w-full;
     @apply flex items-center;
-    @apply bg-gray;
+    @apply bg-gray b-rd-16px;
   }
 
   b {

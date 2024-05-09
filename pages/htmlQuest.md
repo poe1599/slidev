@@ -78,10 +78,13 @@ level: 2
 layout: center
 ---
 
-```html {3}
+```html {3-6}
 <head>
   <!-- else -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
   <!-- else -->
 </head>
 ```
