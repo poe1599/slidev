@@ -1,6 +1,6 @@
 ---
 layout: section
-class: 'bg-yellow-100'
+class: 'bg-lime-200'
 ---
 
 # Javascript
