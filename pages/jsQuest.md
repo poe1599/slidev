@@ -362,20 +362,20 @@ layout: center
 ---
 
 ```js
-let t = ''
-const text = 'cool!'
+let fruit = ''
+const fruits = ['Apple','Orange','Banana']
 
 const waitPrint = () => {
   return new Promise((resolve) => {
     setTimeout(() => {
-      console.log(t)
-      resolve(t)
+      console.log(fruit)
+      resolve(fruit)
     }, 0)
   })
 }
 
-text.split('').forEach(async (n) => {
-  t = n
+fruits.forEach(async (n) => {
+  fruit = n
   await waitPrint()
 })
 ```
@@ -384,7 +384,7 @@ text.split('').forEach(async (n) => {
 ## ⭐⭐⭐Q：請問以上這段程式碼最後的執行結果為何？
 
 
-✅ Ans：打印出5個"!"
+✅ Ans：打印出3個"Banana"
 
 這個題目涉及了幾個重要的概念：
 
