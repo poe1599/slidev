@@ -102,7 +102,7 @@ layout: two-cols
 </style>
 ```
 
-```html {*|16-18}
+```html {*|16-18|*}
 <style>
   .box {
     display: flex;
@@ -282,7 +282,7 @@ layout: two-cols
 
 <div class="mb-16px"></div>
 
-```scss {*|11-13}
+```scss {*|11-13|*}
 .box {
   width: 400px;
   height: 400px;
